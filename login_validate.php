@@ -14,7 +14,7 @@
     $sql = vind row met $us erin;
     $count = found rows
     waar $us overheen komt met $psw + 1 $count
-    */
+    *///
 
     if($count > 1){
         echo"<h1><center> Login successful</center></h1>";
@@ -34,13 +34,14 @@
             SELECT id, us, psw
             FROM login_data
             WHERE loginsystem
+            "
             )->fetchALL(PDO::FETCH_ASSOC);
             } catch (PDOexception $e) {
             $e->GetMessage();
             }
     foreach ($sth as $value) {
-     .$value['id'].' | 
-     .$value['username'].' | 
+     $value['id'].' | '
+     .$value['username'].' | '
      .$value['psw'].' <br>';  
 
     }
