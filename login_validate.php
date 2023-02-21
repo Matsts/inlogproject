@@ -14,7 +14,7 @@
     $sql = vind row met $us erin;
     $count = found rows
     waar $us overheen komt met $psw + 1 $count
-    */
+    *///
 
     if($count > 1){
         echo"<h1><center> Login successful</center></h1>";
