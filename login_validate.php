@@ -34,13 +34,14 @@
             SELECT id, us, psw
             FROM login_data
             WHERE loginsystem
+            "
             )->fetchALL(PDO::FETCH_ASSOC);
             } catch (PDOexception $e) {
             $e->GetMessage();
             }
     foreach ($sth as $value) {
-     .$value['id'].' | 
-     .$value['username'].' | 
+     $value['id'].' | '
+     .$value['username'].' | '
      .$value['psw'].' <br>';  
 
     }
