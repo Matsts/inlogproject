@@ -11,7 +11,7 @@ $query = $conn->prepare($sql);
 $query->execute(array($UserId, $UserPwd));
 
 if ($query->rowCount() >= 1) {
-    $_SESSION['UserId'] = $UserId;
+    $_SESSION['us'] = $UserId;
     header("location: index.php");
     echo '<script>alert("W")</script>';
 

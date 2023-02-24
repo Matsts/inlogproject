@@ -1,5 +1,13 @@
+<?php
+if (isset($_SESSION['us'])) {
+    echo "Hallo" . $_SESSION['us'];
+}
+else {
+    echo "Welkom op de home pagina, login om verder te gaan of maak een account aan";
+}
+?>
+
 <!DOCTYPE html>
-Welkom op de home pagina, login om verder te gaan of maak een account aan
 <form action="login.php">
     <input type="submit" value="login" />
 </form>
