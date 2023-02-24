@@ -1,5 +1,4 @@
 <?php
-//dit stuk is vrij onnodig besteed hier gwn geen tijd aan
 include "connect.php";
 try {
 
